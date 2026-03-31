@@ -1,0 +1,21 @@
+{
+  "name": "cheapest-weekly-deals",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "web:dev": "npm run dev -w apps/web",
+    "api:dev": "npm run dev -w apps/api",
+    "web:build": "npm run build -w apps/web",
+    "api:build": "npm run build -w apps/api"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

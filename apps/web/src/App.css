@@ -1,0 +1,248 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.search-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+.search-button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.search-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  padding: 1rem;
+  background-color: #fee;
+  border: 1px solid #fcc;
+  border-radius: 8px;
+  color: #c00;
+  margin-bottom: 2rem;
+}
+
+.results {
+  margin-top: 2rem;
+}
+
+.results h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.product-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.brand {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.size {
+  color: #888;
+  font-size: 0.85rem;
+  margin: 0.25rem 0 1rem 0;
+}
+
+.deals {
+  margin-top: 1rem;
+}
+
+.deals h4 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #555;
+}
+
+.deal {
+  padding: 0.75rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  border-left: 3px solid #ddd;
+}
+
+.best-deal {
+  background-color: #e8f5e9;
+  border-left-color: #4caf50;
+}
+
+.deal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.supermarket {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #333;
+}
+
+.price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.discount {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.save {
+  background-color: #ff5722;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.unit-price {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+}
+
+.instructions {
+  max-width: 600px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.instructions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.instructions ol {
+  text-align: left;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.instructions li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.instructions code {
+  background-color: #f4f4f4;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.prototype-notice {
+  background-color: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.prototype-notice h3 {
+  margin-top: 0;
+  color: #856404;
+}
+
+.prototype-notice p {
+  margin-bottom: 0;
+  color: #856404;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@cheapest-deals/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "db:migrate": "node dist/db/migrate.js"
+  },
+  "dependencies": {
+    "@cheapest-deals/shared": "*",
+    "better-sqlite3": "^11.9.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.12.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.3"
+  }
+}
